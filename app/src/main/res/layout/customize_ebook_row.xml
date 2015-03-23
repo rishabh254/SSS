@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/size_byte"
+    android:layout_marginLeft="@dimen/size_word"
+    android:layout_marginRight="@dimen/size_word"
+    android:layout_marginTop="@dimen/size_byte">
+
+    <ImageView
+        android:id="@+id/bookThumbnail"
+        android:layout_width="@dimen/book_thumbnail_width"
+        android:layout_height="@dimen/book_thumbnail_height"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bookThumbnail"
+        android:layout_marginLeft="56dp"
+        android:alpha="0.87"
+        android:gravity="right"
+        android:padding="@dimen/size_half_byte"
+        android:text="Hitman Agent 47"
+        android:textColor="#000"
+        android:textSize="@dimen/size_text_primary" />
+
+    <TextView
+        android:id="@+id/bookUploadDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bookTitle"
+        android:alpha="0.87"
+        android:textColor="#000"
+        android:padding="@dimen/size_half_byte"
+        android:text="31-31-31"
+        android:textSize="@dimen/size_text_secondary" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.Holo.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bookUploadDate"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="0" />
+</RelativeLayout>

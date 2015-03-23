@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.sss.MainActivity">
+    <item android:id="@+id/menu_search"
+        android:icon="@drawable/ic_action_search"
+        android:title="Search"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/action_settings" />
+    <item
+        android:id="@+id/action_signOut"
+        android:orderInCategory="101"
+        app:showAsAction="never"
+        android:title="SignOut" />
+
+</menu>

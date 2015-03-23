@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sss.WelcomeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e5e5e5">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center|top"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher"
+            android:tint="#7000" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="100dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#fff"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:cardPreventCornerOverlap="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@string/font_fontFamily_medium"
+                            android:gravity="center"
+                            android:text="SIGN IN"
+                            android:textColor="#0288d1"
+                            android:textSize="@dimen/text_size_xlarge"
+                             />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/userName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:hint="User Name"
+                            app:floatingLabel="highlight"
+                            android:textColor="#000"
+                            android:textSize="@dimen/text_size_medium"
+                            app:baseColor="#0056d3"
+                            app:errorColor="#DDAA00"
+                            app:primaryColor="#982360" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:hint="Password"
+                            android:textColor="#000"
+                            android:textSize="@dimen/text_size_medium"
+                            app:baseColor="#0056d3"
+                            app:errorColor="#DDAA00"
+                            app:floatingLabel="highlight"
+                            app:maxCharacters="10"
+                            app:minCharacters="0"
+                            app:primaryColor="#982360"/>
+                        <TextView
+                            android:id="@+id/password_error"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="password length must be less than 10"
+                            android:textColor="#b71c1c"
+                            android:visibility="gone"
+                           />
+
+                        <Button
+                            android:id="@+id/button_login"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#0288d1"
+                            android:fontFamily="@string/font_fontFamily_medium"
+                            android:text="LogIn"
+                            android:textAllCaps="true"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/text_size_medium"
+                             />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+        </ScrollView>
+    </FrameLayout>
+    <Button
+        android:id="@+id/button_skip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Skip,I'will do this later"
+        android:textColor="#000"
+        android:layout_gravity="bottom"
+        android:background="#efebe9"
+        />
+</LinearLayout>
