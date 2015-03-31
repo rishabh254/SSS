@@ -1,43 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.sss"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sss" >
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <application android:allowBackup="true" android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" android:name=".MyApplication"
-        android:theme="@style/AppTheme">
-        <activity android:label="@string/app_name" android:name=".MainActivity">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/title_activity_second" android:name=".SecondActivity" />
-        <activity android:label="@string/title_activity_sell" android:name=".Sell"></activity>
-        <activity android:label="@string/title_activity_library" android:name=".Library"></activity>
-        <activity android:label="@string/title_activity_ebook" android:name=".Ebook"></activity>
-        <activity android:label="@string/title_activity_ebook_details"
-            android:name=".EBookDetails"></activity>
-        <activity android:label="@string/title_activity_ebook_download"
-            android:name=".Ebook_download"></activity>
-        <activity android:label="@string/title_activity_sellet_details"
-            android:name=".SellerDetails"></activity>
-        <activity android:label="@string/title_activity_search" android:name=".SearchActivity"
-            android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".Activity.SecondActivity"
+            android:label="@string/title_activity_second" />
+        <activity
+            android:name=".Activity.Sell"
+            android:label="@string/title_activity_sell" />
+        <activity
+            android:name=".Activity.Library"
+            android:label="@string/title_activity_library" />
+        <activity
+            android:name=".Activity.Ebook"
+            android:label="@string/title_activity_ebook" />
+        <activity
+            android:name=".Activity.EBookDetails"
+            android:label="@string/title_activity_ebook_details" />
+        <activity
+            android:name=".Activity.EbookDownload"
+            android:label="@string/title_activity_ebook_download" />
+        <activity
+            android:name=".Activity.SellerDetails"
+            android:label="@string/title_activity_sellet_details" />
+        <activity
+            android:name=".Activity.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName=".Activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
-            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
         </activity>
-        <activity android:label="@string/title_activity_welcome"
-            android:name=".WelcomeActivity"></activity>
-        <activity android:label="@string/title_activity_setings"
-            android:name=".Settings"></activity>
-        <activity android:label="@string/title_activity_profile"
-            android:name=".ProfileActivity"></activity>
+        <activity
+            android:name=".Activity.WelcomeActivity"
+            android:label="@string/title_activity_welcome" />
+        <activity
+            android:name=".Activity.Settings"
+            android:label="@string/title_activity_setings" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:label="@string/title_activity_profile" />
+        <activity
+            android:name=".CategoryWise"
+            android:label="@string/title_activity_category_wise" >
+        </activity>
+        <activity
+            android:name=".Activity.BooksCategory"
+            android:label="@string/title_activity_books_category" >
+        </activity>
+        <activity
+            android:name=".Category.ComputerScience"
+            android:label="@string/title_activity_computer_science" >
+        </activity>
+        <activity
+            android:name=".Category.Electrical"
+            android:label="@string/title_activity_electrical" >
+        </activity>
+        <activity
+            android:name=".Category.Fiction"
+            android:label="@string/title_activity_fiction" >
+        </activity>
+        <activity
+            android:name=".Category.Mathematics"
+            android:label="@string/title_activity_mathematics" >
+        </activity>
+        <activity
+            android:name=".Category.Mechanical"
+            android:label="@string/title_activity_mechanical" >
+        </activity>
+        <activity
+            android:name=".Category.Chemical"
+            android:label="@string/title_activity_chemical" >
+        </activity>
+        <activity
+            android:name=".Category.Civil"
+            android:label="@string/title_activity_civil" >
+        </activity>
+        <activity
+            android:name=".Category.Others"
+            android:label="@string/title_activity_others" >
+        </activity>
     </application>
 
 </manifest>

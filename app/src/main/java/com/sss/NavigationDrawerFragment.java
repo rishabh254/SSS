@@ -11,7 +11,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -21,9 +20,14 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sss.VivzAdapter;
-import com.sss.Information;
-import com.sss.R;
+import com.sss.Activity.Ebook;
+import com.sss.Activity.Library;
+import com.sss.Activity.MainActivity;
+import com.sss.Activity.ProfileActivity;
+import com.sss.Activity.Sell;
+import com.sss.Activity.Settings;
+import com.sss.Adapter.VivzAdapter;
+import com.sss.Util.Information;
 
 
 /**
@@ -70,8 +74,8 @@ public class NavigationDrawerFragment extends Fragment {
     public static List<Information> getData() {
         //load only static data inside a drawer
         List<Information> data = new ArrayList<>();
-        int[] icons = {R.drawable.ic_number1, R.drawable.ic_number2, R.drawable.ic_number3, R.drawable.ic_number4,R.drawable.ic_action_settings};
-        String[] titles = {"Home", "EBook", "Sell", "Library","Settings"};
+        int[] icons = {R.drawable.ic_number1,R.drawable.ic_number1, R.drawable.ic_number2, R.drawable.ic_number3, R.drawable.ic_number4,R.drawable.ic_action_settings};
+        String[] titles = {"Profile","Home", "EBook", "Sell", "Library","Settings"};
         for (int i = 0; i <titles.length; i++) {
             Information current = new Information();
             current.iconId = icons[i % icons.length];
@@ -145,7 +149,7 @@ public class NavigationDrawerFragment extends Fragment {
         return layout;
     }
 
-    public void setUp(int fragmentId, DrawerLayout drawerLayout, final Toolbar toolbar) {
+    public void setUp(int fragmentId, final DrawerLayout drawerLayout, final Toolbar toolbar) {
         containerView = getActivity().findViewById(fragmentId);
         mDrawerLayout = drawerLayout;
         mDrawerToggle = new ActionBarDrawerToggle(getActivity(), drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {

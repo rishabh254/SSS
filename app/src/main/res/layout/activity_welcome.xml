@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sss.WelcomeActivity">
+    tools:context="com.sss.Activity.WelcomeActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -44,17 +44,18 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
                         <TextView
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@string/font_fontFamily_medium"
                             android:gravity="center"
+                            android:padding="8dp"
                             android:text="SIGN IN"
                             android:textColor="#0288d1"
-                            android:textSize="@dimen/text_size_xlarge"
-                             />
+                            android:textSize="@dimen/text_size_xlarge" />
 
                         <com.rengwuxian.materialedittext.MaterialEditText
                             android:id="@+id/userName"
@@ -62,11 +63,11 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:hint="User Name"
-                            app:floatingLabel="highlight"
                             android:textColor="#000"
                             android:textSize="@dimen/text_size_medium"
                             app:baseColor="#0056d3"
-                            app:errorColor="#DDAA00"
+                            app:errorColor="#D50000"
+                            app:floatingLabel="highlight"
                             app:primaryColor="#982360" />
 
                         <com.rengwuxian.materialedittext.MaterialEditText
@@ -75,22 +76,23 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:hint="Password"
+                            android:inputType="textPassword"
                             android:textColor="#000"
                             android:textSize="@dimen/text_size_medium"
                             app:baseColor="#0056d3"
-                            app:errorColor="#DDAA00"
+                            app:errorColor="#D50000"
                             app:floatingLabel="highlight"
                             app:maxCharacters="10"
                             app:minCharacters="0"
-                            app:primaryColor="#982360"/>
+                            app:primaryColor="#982360" />
+
                         <TextView
                             android:id="@+id/password_error"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:text="password length must be less than 10"
                             android:textColor="#b71c1c"
-                            android:visibility="gone"
-                           />
+                            android:visibility="gone" />
 
                         <Button
                             android:id="@+id/button_login"
@@ -100,23 +102,23 @@
                             android:background="#0288d1"
                             android:fontFamily="@string/font_fontFamily_medium"
                             android:text="LogIn"
+                            android:elevation="8dp"
                             android:textAllCaps="true"
                             android:textColor="#fff"
-                            android:textSize="@dimen/text_size_medium"
-                             />
+                            android:textSize="@dimen/text_size_medium" />
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </FrameLayout>
         </ScrollView>
     </FrameLayout>
+
     <Button
         android:id="@+id/button_skip"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Skip,I'will do this later"
-        android:textColor="#000"
         android:layout_gravity="bottom"
         android:background="#efebe9"
-        />
+        android:text="Skip, Login later"
+        android:textColor="#000" />
 </LinearLayout>

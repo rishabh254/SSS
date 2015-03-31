@@ -1,13 +1,31 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <include layout="@layout/app_bar" />
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        tools:context=".ui.SearchActivity" />
-</LinearLayout>
+    tools:context="com.sss.Activity.SearchActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ImageView
+        android:padding="8dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/voice_search_button"
+        android:onClick="startEbookActivity"
+        android:src="@drawable/ic_action_mic"
+        android:layout_alignBottom="@+id/search_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_button"
+        android:layout_alignTop="@+id/search_button"
+        android:layout_toLeftOf="@+id/voice_search_button"
+        android:layout_toStartOf="@+id/voice_search_button" />
+
+
+</RelativeLayout>

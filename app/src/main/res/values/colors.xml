@@ -10,6 +10,7 @@
     <color name="colorDivider">#B6B6B6</color>
     <color name="colorText">#17301C</color>
     <color name="white">#fff</color>
+    <color name="black">#000</color>
     <color name="tab_background">@color/colorPrimary</color>
     <color name="tab_selected_strip">@color/colorAccent</color>
 

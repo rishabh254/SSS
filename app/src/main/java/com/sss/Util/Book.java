@@ -1,12 +1,14 @@
 package com.sss.Util;
 
+
 import java.util.ArrayList;
 import java.util.Date;
+import java.io.Serializable;
 
 /**
  * Created by Khyati on 3/16/2015.
  */
-public class Book {
+public class Book implements Serializable{
     private String SSS;
     private String symbol;
     private String bookName;
@@ -20,7 +22,7 @@ public class Book {
     private String length;
     private String imageUrl;
     private String publisher;
-    private ArrayList<Author> authors;
+    private String authors;
     private int ratings;
 
     public String getSSS() {
@@ -135,11 +137,11 @@ public class Book {
         this.publisher = publisher;
     }
 
-    public void setAuthorsList(ArrayList<Author> authors){
-        this.authors=authors;
+    public String getAuthors() {
+        return authors;
     }
 
-    public ArrayList<Author> getAuthorsList(){
-        return authors;
+    public void setAuthors(String authors) {
+        this.authors = authors;
     }
 }

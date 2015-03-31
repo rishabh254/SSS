@@ -20,9 +20,10 @@
     <string name="title_activity_ebook_details">EBookDetails</string>
 
     <string-array name="tabs">
+        <item>Stats</item>
+        <item>Types</item>
         <item>All</item>
         <item>Recent</item>
-        <item>Popular</item>
     </string-array>
     <string-array name="language">
         <item>English</item>
@@ -35,13 +36,17 @@
 
     <string name="title_activity_ebook_download">Ebook_download</string>
     <string name="search_title">Search</string>
-    <string name="title_activity_sellet_details">SelletDetails</string>
+    <string name="title_activity_sellet_details">SellerDetails</string>
     <string name="app_label">SSS</string>
     <string name="search_hint">Search SSS</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
-    <string name="title_activity_setings">Setings</string>
+    <string name="title_activity_setings">Settings</string>
     <string name="title_activity_profile">ProfileActivity</string>
+
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -49,7 +54,17 @@
 
     <!--error handling-->
     <string name="error_timeout">Oops! Your Connection Timed Out</string>
-    <string name="error_auth_failure">Oops! RottenTomatoes Says It Doesn\'t Recognize You</string>
-    <string name="error_network">Oops! RottenTomatoes Server Just Messed Up</string>
+    <string name="error_auth_failure">Oops! Says It Doesn\'t Recognize You</string>
+    <string name="error_network">Oops!  Server Just Messed Up</string>
     <string name="error_parser">Oops! Data Received Was An Unreadable Mess</string>
+    <string name="title_activity_category_wise">CategoryWise</string>
+    <string name="title_activity_books_category">BooksCategory</string>
+    <string name="title_activity_computer_science">ComputerScience</string>
+    <string name="title_activity_electrical">Electrical</string>
+    <string name="title_activity_fiction">Fiction</string>
+    <string name="title_activity_mathematics">Mathematics</string>
+    <string name="title_activity_mechanical">Mechanical</string>
+    <string name="title_activity_chemical">Chemical</string>
+    <string name="title_activity_civil">Civil</string>
+    <string name="title_activity_others">Others</string>
 </resources>

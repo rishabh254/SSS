@@ -34,6 +34,7 @@
             android:textColor="@android:color/black"
             style="@style/TextAppearance.AppCompat.Large"/>
         <TextView
+            android:id="@+id/userProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SSS"
@@ -45,6 +46,7 @@
             android:layout_height="1dp"
             android:background="@color/colorAccent"/>
         <TextView
+            android:id="@+id/userEmailId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="example@iitp.ac.in"

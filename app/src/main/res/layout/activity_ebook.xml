@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="com.sss.Ebook">
+        tools:context="com.sss.Activity.Ebook">
 
             <Tabs.SlidingTabLayout
                 android:id="@+id/tabs"
@@ -34,7 +34,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
-
     </LinearLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat

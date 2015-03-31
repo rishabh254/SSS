@@ -8,6 +8,13 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:theme="@style/Base.Theme.AppCompat.Light"
-
         />
+    <TextView
+        android:id="@+id/textVolleyError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/size_word"
+        android:textColor="#FF4444"
+        android:visibility="gone" />
 </FrameLayout>

@@ -1,19 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.sss.SearchActivity">
-
+    tools:context="com.sss.Activity.SearchActivity">
     <item
-        android:id="@+id/voice_search"
-        android:icon="@drawable/ic_action_mic"
-        android:orderInCategory="0"
-        android:showAsAction="always"
-        android:title="Voice Search" />
-    <item
-        android:id="@+id/menu_search"
-        android:icon="@drawable/ic_action_search"
-        android:orderInCategory="1"
-        android:title="Search"/>
-        <!--app:actionViewClass="android.support.v7.widget.SearchView"-->
-        <!--app:showAsAction="always" />-->
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
 </menu>
